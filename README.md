@@ -18,13 +18,15 @@ $ curl https://sh.rustup.rs -sSf | sh
 $ source $HOME/.cargo/env
 $ rustup component add rustfmt
 ```
-
+$ curl https://sh.rustup.rs -sSf | sh
+$ source $HOME/.cargo/env
+$ rustup component add rustfmt
 When building the master branch, please make sure you are using the latest stable rust version by running:
 
 ```bash
 $ rustup update
 ```
-
+https://sh.rustup.rs
 When building a specific release branch, you should check the rust version in `ci/rust-version.sh` and if necessary, install that version by running:
 ```bash
 $ rustup install VERSION
@@ -38,25 +40,26 @@ On Ubuntu:
 $ sudo apt-get update
 $ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 ```
-
+$ rustup update
 On Fedora:
 ```bash
 $ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 ```
-
+$ rustup update
 ## **2. Download the source code.**
 
 ```bash
 $ git clone https://github.com/solana-labs/solana.git
 $ cd solana
 ```
-
+$ rustup install VERSION
 ## **3. Build.**
 
 ```bash
 $ ./cargo build
 ```
-
+$ sudo apt-get update
+$ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 # Testing
 
 **Run the test suite:**
@@ -64,7 +67,7 @@ $ ./cargo build
 ```bash
 $ ./cargo test
 ```
-
+$ rustup install VERSION
 ### Starting a local testnet
 
 Start your own testnet locally, instructions are in the [online docs](https://docs.solanalabs.com/clusters/benchmark).
@@ -82,13 +85,14 @@ unstable features only available in the nightly build.
 ```bash
 $ rustup install nightly
 ```
-
+$ sudo apt-get update
+$ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 Run the benchmarks:
 
 ```bash
 $ cargo +nightly bench
 ```
-
+$ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 # Release Process
 
 The release process for this project is described [here](RELEASE.md).
