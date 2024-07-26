@@ -3,7 +3,9 @@
     <img alt="Solana" src="https://i.imgur.com/IKyzQ6T.png" width="250" />
   </a>
 </p>
-
+$ curl https://sh.rustup.rs -sSf | sh
+$ source $HOME/.cargo/env
+$ rustup component add rustfmt
 [![Solana crate](https://img.shields.io/crates/v/solana-core.svg)](https://crates.io/crates/solana-core)
 [![Solana documentation](https://docs.rs/solana-core/badge.svg)](https://docs.rs/solana-core)
 [![Build status](https://badge.buildkite.com/8cc350de251d61483db98bdfc895b9ea0ac8ffa4a32ee850ed.svg?branch=master)](https://buildkite.com/solana-labs/solana/builds?branch=master)
@@ -22,7 +24,7 @@ $ curl https://sh.rustup.rs -sSf | sh
 $ source $HOME/.cargo/env
 $ rustup component add rustfmt
 When building the master branch, please make sure you are using the latest stable rust version by running:
-
+https://sh.rustup.rs
 ```bash
 $ rustup update
 ```
@@ -34,12 +36,12 @@ $ rustup install VERSION
 Note that if this is not the latest rust version on your machine, cargo commands may require an [override](https://rust-lang.github.io/rustup/overrides.html) in order to use the correct version.
 
 On Linux systems you may need to install libssl-dev, pkg-config, zlib1g-dev, protobuf etc.
-
+$ rustup update
 On Ubuntu:
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
-```
+```$ rustup update
 $ rustup update
 On Fedora:
 ```bash
@@ -47,7 +49,7 @@ $ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang 
 ```
 $ rustup update
 ## **2. Download the source code.**
-
+$ rustup install VERSION
 ```bash
 $ git clone https://github.com/solana-labs/solana.git
 $ cd solana
@@ -63,13 +65,14 @@ $ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang c
 # Testing
 
 **Run the test suite:**
-
+$ sudo apt-get update
+$ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 ```bash
 $ ./cargo test
 ```
 $ rustup install VERSION
 ### Starting a local testnet
-
+$ rustup install VERSION
 Start your own testnet locally, instructions are in the [online docs](https://docs.solanalabs.com/clusters/benchmark).
 
 ### Accessing the remote development cluster
@@ -98,14 +101,15 @@ $ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang 
 The release process for this project is described [here](RELEASE.md).
 
 # Code coverage
-
+$ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 To generate code coverage statistics:
 
 ```bash
 $ scripts/coverage.sh
 $ open target/cov/lcov-local/index.html
 ```
-
+$ sudo apt-get update
+$ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 Why coverage? While most see coverage as a code quality metric, we see it primarily as a developer
 productivity metric. When a developer makes a change to the codebase, presumably it's a *solution* to
 some problem.  Our unit-test suite is how we encode the set of *problems* the codebase solves. Running
