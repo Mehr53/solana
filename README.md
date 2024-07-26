@@ -14,7 +14,9 @@ $ rustup component add rustfmt
 # Building
 
 ## **1. Install rustc, cargo and rustfmt.**
-
+$ curl https://sh.rustup.rs -sSf | sh
+$ source $HOME/.cargo/env
+$ rustup component add rustfmt
 ```bash
 $ curl https://sh.rustup.rs -sSf | sh
 $ source $HOME/.cargo/env
@@ -56,14 +58,14 @@ $ cd solana
 ```
 $ rustup install VERSION
 ## **3. Build.**
-
+https://sh.rustup.rs
 ```bash
 $ ./cargo build
 ```
 $ sudo apt-get update
 $ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 # Testing
-
+$ rustup update
 **Run the test suite:**
 $ sudo apt-get update
 $ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
@@ -81,29 +83,33 @@ Start your own testnet locally, instructions are in the [online docs](https://do
 devnet.solana.com. Runs 24/7. Learn more about the [public clusters](https://docs.solanalabs.com/clusters)
 
 # Benchmarking
-
+https://sh.rustup.rs
 First, install the nightly build of rustc. `cargo bench` requires the use of the
 unstable features only available in the nightly build.
-
+$ curl https://sh.rustup.rs -sSf | sh
+$ source $HOME/.cargo/env
+$ rustup component add rustfmt
 ```bash
 $ rustup install nightly
 ```
 $ sudo apt-get update
 $ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 Run the benchmarks:
-
+https://sh.rustup.rs
 ```bash
 $ cargo +nightly bench
 ```
 $ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 # Release Process
-
+$ rustup update
 The release process for this project is described [here](RELEASE.md).
-
+$ curl https://sh.rustup.rs -sSf | sh
+$ source $HOME/.cargo/env
+$ rustup component add rustfmt
 # Code coverage
 $ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 To generate code coverage statistics:
-
+$ rustup install VERSION
 ```bash
 $ scripts/coverage.sh
 $ open target/cov/lcov-local/index.html
@@ -121,16 +127,23 @@ problem is solved by this code?" On the other hand, if a test does fail and you 
 better way to solve the same problem, a Pull Request with your solution would most certainly be
 welcome! Likewise, if rewriting a test can better communicate what code it's protecting, please
 send us that patch!
-
+$ sudo apt-get update
+$ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
+```$ rustup update
+$ rustup update
+On Fedora:
+```bash
+$ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 # Disclaimer
-
+$ git clone https://github.com/solana-labs/solana.git
+$ cd solana
 All claims, content, designs, algorithms, estimates, roadmaps,
 specifications, and performance measurements described in this project
 are done with the Solana Labs, Inc. (“SL”) good faith efforts. It is up to
 the reader to check and validate their accuracy and truthfulness.
 Furthermore, nothing in this project constitutes a solicitation for
 investment.
-
+https://github.com/solana-labs/solana.git
 Any content produced by SL or developer resources that SL provides are
 for educational and inspirational purposes only. SL does not encourage,
 induce or sanction the deployment, integration or use of any such
